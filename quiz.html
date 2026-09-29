@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Quiz Container -->
+<div id="quiz-container">
+    <!-- Header -->
+    <div id="quiz-header">
+        <h1 id="quiz-title">JS</h1>
+        <div id="progress-info">
+            <span id="question-counter">Question 1 of 10</span>
+            <div id="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question Area -->
+    <div id="question-area">
+        <div id="timer-display">
+            <div id="timer-bar"></div>
+            <span id="timer-text">30</span>
+        </div>
+        
+        <h2 id="question-text"></h2>
+        
+        <div id="answer-options">
+            <!-- Radio buttons generated dynamically -->
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div id="navigation">
+        <button id="prev-btn" >Previous</button>
+        <button id="pause-btn">Pause</button>
+        <button id="next-btn" >Next</button>
+    </div>
+
+    <!-- Score Display -->
+    <div id="score-display">
+        Score: <span id="current-score">0</span> / <span id="total-questions">10</span>
+        (<span id="score-percentage">0%</span>)
+    </div>
+</div>
+
+<!-- Results Screen (initially hidden) -->
+<div id="results-screen" style="display: none;">
+    <h2>Quiz Complete!</h2>
+    <div id="final-score"></div>
+    <div id="detailed-results"></div>
+    <button id="restart-btn">Take Quiz Again</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
